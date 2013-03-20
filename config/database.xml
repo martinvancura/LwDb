@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : routing.xml
+    Created on : 5. prosinec 2011, 11:07
+    Author     : Petr Brabac <pb@lectura.de>
+    Description:
+    Database row attribute name is required and one of the databases row must have name default.
+        host     - database server address (required)
+        port     - database server port (optional)
+        user     - database user (required)
+        password - database user password (required)
+        db       - database name (required)
+        class    - database connection handler
+-->
+
+<databases>
+    <database name="default">
+        <type>mysql</type>
+        <host>46.38.243.28</host>
+        <port>3306</port>
+        <user>remote</user>
+        <password>RemoteWatson--</password>
+        <db>lectura_press</db>
+        <class>LoDebugDbConnection</class>
+    </database>
+</databases>
